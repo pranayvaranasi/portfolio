@@ -1,0 +1,126 @@
+:root{
+    --primary-color: #ff0095;
+    --background-light: #10121A;
+    --header-height: 100vh;
+    --text-color : #f1f1f1;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html {
+    font-size: 110%;
+}
+body{
+    margin:0;
+    background-size: cover;
+    background : linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    background-attachment: fixed;
+    background-image: url(https://res.cloudinary.com/drd8empws/image/upload/v1726469445/mandelbrot-set-6859488_1280_uwywqi.webp);
+    padding: 0;
+    line-height: 1.5;
+    color: var(--text-color);
+    font-family: 'Nunito', sans-serif;
+    overflow-x:hidden;
+}
+
+.header-background{
+    text-align:center;
+    height: var(--header-height);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav {
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    padding: 15px 0;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+.header-content img{
+    max-width: 250px;
+    border-radius: 50%;
+}
+.header-content h1, .header-content p {
+    margin : 0.5rem 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#about{
+    background-color: var(--background-dark-color);
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+.profile-photo{
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+#projects{
+    background-color: var(--background-dark-color);
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.project{
+    width:400px;
+    height:400px;
+    text-align: center;
+    margin: 100px;
+    display:inline-block;
+    line-height: 200px;    
+}
+#contact{
+    background-color: var(--background-dark-color);
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+footer{
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.3rem;
+}
+a{
+    color: var(--primary-color);
+    transition: color 0.5s ease;
+}
+a:hover{
+    color: var(--secondary-color);
+}
+@media (max-width: 768px){
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    .profile-photo{
+        width: 150px;
+        margin:0 auto;
+    }
+}
